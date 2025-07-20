@@ -342,3 +342,506 @@ Stacktrace:
 2025-07-19 16:37:47,234 - XAutoReplyBot - INFO - Searching for mentions: @anoma -from:anoma
 2025-07-19 16:38:08,880 - XAutoReplyBot - INFO - Found 5 tweets
 2025-07-19 16:38:09,904 - XAutoReplyBot - INFO - Replying to batch of 4 tweets...
+2025-07-20 06:59:13,793 - XAutoReplyBot - INFO - Loaded 10 replied tweets
+2025-07-20 06:59:13,843 - XAutoReplyBot - INFO - Gemini model initialized successfully with gemini-1.5-flash
+2025-07-20 06:59:13,844 - XAutoReplyBot - INFO - Starting X Auto-Reply Bot
+2025-07-20 06:59:13,844 - XAutoReplyBot - INFO - Using User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0
+2025-07-20 07:00:36,874 - XAutoReplyBot - INFO - Attempting to login to X
+2025-07-20 07:00:53,430 - XAutoReplyBot - INFO - Waiting for username field...
+2025-07-20 07:01:19,539 - XAutoReplyBot - INFO - Found username field, entering: @customtype8
+2025-07-20 07:01:24,334 - XAutoReplyBot - INFO - Waiting for password or email/phone confirmation field...
+2025-07-20 07:01:29,986 - XAutoReplyBot - INFO - Found password field, entering password...
+2025-07-20 07:01:34,257 - XAutoReplyBot - INFO - Waiting for home page to load...
+2025-07-20 07:01:42,430 - XAutoReplyBot - INFO - Successfully logged in to X
+2025-07-20 07:01:42,431 - XAutoReplyBot - INFO - Starting cycle 1
+2025-07-20 07:01:42,431 - XAutoReplyBot - INFO - Posting hype tweet 1/3...
+2025-07-20 07:01:42,432 - XAutoReplyBot - INFO - Generating hype tweet...
+2025-07-20 07:01:53,720 - XAutoReplyBot - INFO - Generated hype tweet: Yap!  Just saw the latest Anoma demo & it's crushing it!   Seriously innovative stuff, building the future of decentralized privacy right before our eyes.  Join the community @anoma – you won't regret it!  #Anoma #Web3 #Privacy
+2025-07-20 07:03:31,274 - XAutoReplyBot - INFO - Successfully posted hype tweet: Yap!  Just saw the latest Anoma demo & it's crushing it!   Seriously innovative stuff, building the future of decentralized privacy right before our eyes.  Join the community @anoma – you won't regret it!  #Anoma #Web3 #Privacy
+2025-07-20 07:03:31,276 - XAutoReplyBot - INFO - Waiting 105 seconds before next hype tweet...
+2025-07-20 07:05:16,278 - XAutoReplyBot - INFO - Posting hype tweet 2/3...
+2025-07-20 07:05:16,279 - XAutoReplyBot - INFO - Generating hype tweet...
+2025-07-20 07:05:17,260 - XAutoReplyBot - INFO - Generated hype tweet: Yap yap yap!  @anoma is CRUSHING IT!   Seriously, the innovation happening here is next-level.  Building the future of decentralized everything, one line of code at a time.  Join the community—you won't regret it!  #Anoma #Web3 #Innovation
+2025-07-20 07:07:03,167 - XAutoReplyBot - INFO - Successfully posted hype tweet: Yap yap yap!  @anoma is CRUSHING IT!   Seriously, the innovation happening here is next-level.  Building the future of decentralized everything, one line of code at a time.  Join the community—you won't regret it!  #Anoma #Web3 #Innovation
+2025-07-20 07:07:03,172 - XAutoReplyBot - INFO - Waiting 78 seconds before next hype tweet...
+2025-07-20 07:08:21,179 - XAutoReplyBot - INFO - Posting hype tweet 3/3...
+2025-07-20 07:08:21,181 - XAutoReplyBot - INFO - Generating hype tweet...
+2025-07-20 07:08:22,089 - XAutoReplyBot - INFO - Generated hype tweet: Yap yap yap!  @anoma is crushing it!  Just saw the latest dev update – the innovation is insane  Building the future of decentralized finance, one line of code at a time.  Join the community; you won't regret it! #Anoma #Web3 #DeFi
+2025-07-20 07:09:28,099 - XAutoReplyBot - ERROR - Error posting hype tweet: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-07-20 07:09:44,586 - XAutoReplyBot - ERROR - Error in hype tweet cycle 1: HTTPConnectionPool(host='localhost', port=63608): Max retries exceeded with url: /session/459e3482c7d2284b7fd80202b8b7a3c5/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024B37EE6190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-20 07:10:47,590 - XAutoReplyBot - INFO - Searching for mentions: @anoma -from:anoma
+2025-07-20 07:12:29,170 - XAutoReplyBot - INFO - Loaded 12 replied tweets
+2025-07-20 07:12:29,173 - XAutoReplyBot - INFO - Gemini model initialized successfully with gemini-1.5-flash
+2025-07-20 07:12:29,174 - XAutoReplyBot - INFO - Starting X Auto-Reply Bot
+2025-07-20 07:12:29,176 - XAutoReplyBot - INFO - Using User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+2025-07-20 07:13:12,376 - XAutoReplyBot - INFO - Attempting to login to X
+2025-07-20 07:13:21,471 - XAutoReplyBot - INFO - Waiting for username field...
+2025-07-20 07:13:26,951 - XAutoReplyBot - INFO - Found username field, entering: @customtype8
+2025-07-20 07:13:32,670 - XAutoReplyBot - INFO - Waiting for password or email/phone confirmation field...
+2025-07-20 07:13:35,538 - XAutoReplyBot - INFO - Found password field, entering password...
+2025-07-20 07:13:39,761 - XAutoReplyBot - INFO - Waiting for home page to load...
+2025-07-20 07:13:48,694 - XAutoReplyBot - INFO - Successfully logged in to X
+2025-07-20 07:13:48,695 - XAutoReplyBot - INFO - Starting cycle 1
+2025-07-20 07:13:48,696 - XAutoReplyBot - INFO - Posting hype tweet 1/3...
+2025-07-20 07:13:48,696 - XAutoReplyBot - INFO - Generating hype tweet...
+2025-07-20 07:14:12,934 - XAutoReplyBot - INFO - Generated hype tweet: Yap!  Just got a sneak peek at what @anoma is building   This innovation is next level!  Seriously crushing it with the community & building the future of decentralized systems.  Get ready!  #Anoma #Web3 #Innovation
+2025-07-20 07:14:12,935 - XAutoReplyBot - INFO - Navigating to compose tweet page...
+2025-07-20 07:14:20,102 - XAutoReplyBot - INFO - Looking for tweet textarea...
+2025-07-20 07:14:20,130 - XAutoReplyBot - INFO - Found tweet textarea, clicking and typing...
+2025-07-20 07:15:46,524 - XAutoReplyBot - INFO - Looking for tweet button...
+2025-07-20 07:15:46,623 - XAutoReplyBot - INFO - Found tweet button with selector: [data-testid="tweetButton"]
+2025-07-20 07:15:46,624 - XAutoReplyBot - INFO - Attempting to click tweet button...
+2025-07-20 07:15:47,792 - XAutoReplyBot - INFO - Clicked tweet button with JavaScript
+2025-07-20 07:15:47,794 - XAutoReplyBot - INFO - Waiting for tweet to be posted...
+2025-07-20 07:15:55,889 - XAutoReplyBot - INFO - Tweet posting completed (still on compose page)
+2025-07-20 07:15:55,897 - XAutoReplyBot - INFO - Successfully posted hype tweet: Yap!  Just got a sneak peek at what @anoma is building   This innovation is next level!  Seriously crushing it with the community & building the future of decentralized systems.  Get ready!  #Anoma #Web3 #Innovation
+2025-07-20 07:15:55,902 - XAutoReplyBot - INFO - Waiting 51 seconds before next hype tweet...
+2025-07-20 07:16:46,905 - XAutoReplyBot - INFO - Posting hype tweet 2/3...
+2025-07-20 07:16:46,907 - XAutoReplyBot - INFO - Generating hype tweet...
+2025-07-20 07:16:48,593 - XAutoReplyBot - INFO - Generated hype tweet: Yap!  We're crushing it over here at @anoma!  Building the future of decentralized finance, one innovative block at a time.  The community is buzzing – you NEED to see what's happening!  #Anoma #DeFi #blockchain
+2025-07-20 07:16:48,595 - XAutoReplyBot - INFO - Navigating to compose tweet page...
+2025-07-20 07:16:55,795 - XAutoReplyBot - INFO - Looking for tweet textarea...
+2025-07-20 07:16:55,825 - XAutoReplyBot - INFO - Found tweet textarea, clicking and typing...
+2025-07-20 07:18:11,895 - XAutoReplyBot - INFO - Looking for tweet button...
+2025-07-20 07:18:12,037 - XAutoReplyBot - INFO - Found tweet button with selector: [data-testid="tweetButton"]
+2025-07-20 07:18:12,039 - XAutoReplyBot - INFO - Attempting to click tweet button...
+2025-07-20 07:18:13,170 - XAutoReplyBot - INFO - Clicked tweet button with JavaScript
+2025-07-20 07:18:13,171 - XAutoReplyBot - INFO - Waiting for tweet to be posted...
+2025-07-20 07:18:21,194 - XAutoReplyBot - INFO - Tweet posting completed (still on compose page)
+2025-07-20 07:18:21,202 - XAutoReplyBot - INFO - Successfully posted hype tweet: Yap!  We're crushing it over here at @anoma!  Building the future of decentralized finance, one innovative block at a time.  The community is buzzing – you NEED to see what's happening!  #Anoma #DeFi #blockchain
+2025-07-20 07:18:21,204 - XAutoReplyBot - INFO - Waiting 107 seconds before next hype tweet...
+2025-07-20 07:20:08,207 - XAutoReplyBot - INFO - Posting hype tweet 3/3...
+2025-07-20 07:20:08,209 - XAutoReplyBot - INFO - Generating hype tweet...
+2025-07-20 07:20:12,300 - XAutoReplyBot - INFO - Generated hype tweet: Yap!  @anoma is absolutely CRUSHING IT!   Building the future of decentralized finance, one innovative block at a time.  The community is buzzing – you HAVE to see what we're cooking up!  #Anoma #Web3 #Innovation
+2025-07-20 07:20:12,302 - XAutoReplyBot - INFO - Navigating to compose tweet page...
+2025-07-20 07:20:20,347 - XAutoReplyBot - INFO - Looking for tweet textarea...
+2025-07-20 07:20:20,762 - XAutoReplyBot - INFO - Found tweet textarea, clicking and typing...
+2025-07-20 07:21:49,819 - XAutoReplyBot - INFO - Looking for tweet button...
+2025-07-20 07:21:49,923 - XAutoReplyBot - INFO - Found tweet button with selector: [data-testid="tweetButton"]
+2025-07-20 07:21:49,924 - XAutoReplyBot - INFO - Attempting to click tweet button...
+2025-07-20 07:21:51,120 - XAutoReplyBot - INFO - Clicked tweet button with JavaScript
+2025-07-20 07:21:51,122 - XAutoReplyBot - INFO - Waiting for tweet to be posted...
+2025-07-20 07:21:59,150 - XAutoReplyBot - INFO - Tweet posting completed (still on compose page)
+2025-07-20 07:21:59,158 - XAutoReplyBot - INFO - Successfully posted hype tweet: Yap!  @anoma is absolutely CRUSHING IT!   Building the future of decentralized finance, one innovative block at a time.  The community is buzzing – you HAVE to see what we're cooking up!  #Anoma #Web3 #Innovation
+2025-07-20 07:21:59,171 - XAutoReplyBot - INFO - Hype tweet cycle complete. Waiting 326 seconds (~5 min + jitter) before next cycle...
+2025-07-20 07:27:25,176 - XAutoReplyBot - INFO - Searching for mentions: @anoma -from:anoma
+2025-07-20 07:27:43,079 - XAutoReplyBot - INFO - Found 6 tweets
+2025-07-20 07:27:43,735 - XAutoReplyBot - INFO - Replying to batch of 5 tweets...
+2025-07-20 07:28:39,039 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:28:39,547 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1752992919127
+2025-07-20 07:28:39,972 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1752992919581
+2025-07-20 07:28:40,572 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1752992920011
+2025-07-20 07:28:40,573 - XAutoReplyBot - INFO - Batch complete. Waiting 60 seconds before next batch...
+2025-07-20 07:29:40,576 - XAutoReplyBot - INFO - Searching for mentions: @anoma -from:anoma
+2025-07-20 07:29:57,977 - XAutoReplyBot - INFO - Found 8 tweets
+2025-07-20 07:29:58,497 - XAutoReplyBot - INFO - Replying to batch of 5 tweets...
+2025-07-20 07:29:58,923 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1946805798388273572
+2025-07-20 07:30:31,515 - XAutoReplyBot - INFO - Successfully replied to tweet 1946633707651281081: This is revolutionary! Anoma is changing everything! 
+2025-07-20 07:30:53,165 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:31:15,148 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:31:37,343 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:31:37,362 - XAutoReplyBot - INFO - Batch complete. Waiting 60 seconds before next batch...
+2025-07-20 07:32:37,365 - XAutoReplyBot - INFO - Searching for mentions: @anoma -from:anoma
+2025-07-20 07:32:55,596 - XAutoReplyBot - INFO - Found 7 tweets
+2025-07-20 07:32:56,049 - XAutoReplyBot - INFO - Replying to batch of 5 tweets...
+2025-07-20 07:32:56,682 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1946682135269556455
+2025-07-20 07:33:23,110 - XAutoReplyBot - INFO - Successfully replied to tweet 1946638544065212542: Anoma is the blueprint for greatness! 
+2025-07-20 07:33:44,766 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:34:06,835 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:34:29,159 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:34:29,177 - XAutoReplyBot - INFO - Batch complete. Waiting 60 seconds before next batch...
+2025-07-20 07:35:29,179 - XAutoReplyBot - INFO - Searching for mentions: @anoma -from:anoma
+2025-07-20 07:35:45,981 - XAutoReplyBot - INFO - Found 5 tweets
+2025-07-20 07:35:46,975 - XAutoReplyBot - INFO - Replying to batch of 5 tweets...
+2025-07-20 07:36:18,496 - XAutoReplyBot - INFO - Successfully replied to tweet 1946588656279376118: This is what success looks like! Anoma is winning! 
+2025-07-20 07:36:40,741 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:37:02,757 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:37:03,334 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1752993422846
+2025-07-20 07:37:03,778 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1752993423402
+2025-07-20 07:37:03,780 - XAutoReplyBot - INFO - Batch complete. Waiting 60 seconds before next batch...
+2025-07-20 07:38:03,785 - XAutoReplyBot - INFO - Searching for mentions: @anoma -from:anoma
+2025-07-20 07:38:24,364 - XAutoReplyBot - INFO - Found 5 tweets
+2025-07-20 07:38:25,349 - XAutoReplyBot - INFO - Replying to batch of 5 tweets...
+2025-07-20 07:38:25,719 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1946793999093870860
+2025-07-20 07:38:52,277 - XAutoReplyBot - INFO - Successfully replied to tweet 1946800712702394776: Anoma is the blueprint for greatness! 
+2025-07-20 07:39:14,074 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:39:36,182 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:39:36,919 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1752993576269
+2025-07-20 07:39:36,921 - XAutoReplyBot - INFO - Batch complete. Waiting 60 seconds before next batch...
+2025-07-20 07:40:36,923 - XAutoReplyBot - INFO - Searching for mentions: @anoma -from:anoma
+2025-07-20 07:40:52,957 - XAutoReplyBot - INFO - Found 6 tweets
+2025-07-20 07:40:53,304 - XAutoReplyBot - INFO - Replying to batch of 5 tweets...
+2025-07-20 07:41:35,486 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:41:36,125 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1752993695551
+2025-07-20 07:41:36,871 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1752993696215
+2025-07-20 07:41:37,523 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1752993696959
+2025-07-20 07:41:37,524 - XAutoReplyBot - INFO - Batch complete. Waiting 60 seconds before next batch...
+2025-07-20 07:42:37,527 - XAutoReplyBot - INFO - Searching for mentions: @anoma -from:anoma
+2025-07-20 07:42:54,245 - XAutoReplyBot - INFO - Found 5 tweets
+2025-07-20 07:42:55,058 - XAutoReplyBot - INFO - Replying to batch of 5 tweets...
+2025-07-20 07:43:18,310 - XAutoReplyBot - INFO - Successfully replied to tweet 1946689563449045131: This is so inspiring! Go Anoma! 
+2025-07-20 07:43:40,289 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:44:02,434 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:44:24,307 - XAutoReplyBot - ERROR - Error replying to tweet: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7b1a33+62339]
+	GetHandleVerifier [0x0x7b1a74+62404]
+	(No symbol) [0x0x5f2123]
+	(No symbol) [0x0x63a86e]
+	(No symbol) [0x0x63ac0b]
+	(No symbol) [0x0x682f72]
+	(No symbol) [0x0x65f404]
+	(No symbol) [0x0x6807a3]
+	(No symbol) [0x0x65f1b6]
+	(No symbol) [0x0x62e7a2]
+	(No symbol) [0x0x62f644]
+	GetHandleVerifier [0x0xa265c3+2637587]
+	GetHandleVerifier [0x0xa219ca+2618138]
+	GetHandleVerifier [0x0x7d84aa+220666]
+	GetHandleVerifier [0x0x7c88d8+156200]
+	GetHandleVerifier [0x0x7cf06d+182717]
+	GetHandleVerifier [0x0x7b9978+94920]
+	GetHandleVerifier [0x0x7b9b02+95314]
+	GetHandleVerifier [0x0x7a4c4a+9626]
+	BaseThreadInitThunk [0x0x767cfcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775482ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x7754827e+238]
+
+2025-07-20 07:44:24,914 - XAutoReplyBot - ERROR - Tweet element became stale while trying to reply to 1752993864405
+2025-07-20 07:44:24,915 - XAutoReplyBot - INFO - Batch complete. Waiting 60 seconds before next batch...

@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-"""
-X Account Auto-Reply Bot - Production Version
-Automatically replies to tweets mentioning @anoma
-"""
 
 import os
 import json
@@ -14,13 +9,10 @@ from dataclasses import dataclass, field
 from typing import List, Dict, Optional, Set
 import hashlib
 import tempfile
-
 from selenium.webdriver.common.action_chains import ActionChains
-
 # Load environment variables from .env file
 from dotenv import load_dotenv
 load_dotenv()
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -595,7 +587,24 @@ class XAutoReplyBot:
             return False # Indicate failure
         try:
             self.logger.info("Generating hype tweet...")
-            prompt = f"Generate a short, engaging tweet about Anoma, mentioning @anoma somewhere (but NOT at the start). Keep it under 140 characters. Make it sound positive and excited. Do NOT start the tweet with @anoma."
+            prompt = f"""Generate a creative, engaging tweet about Anoma that feels authentic and exciting. 
+
+Style guidelines:
+- Use casual, energetic language like "yap", "crushing it", "building the future"
+- Include @anoma somewhere in the tweet (but NOT at the start)
+- Keep it under 280 characters
+- Make it sound like someone genuinely excited about the project
+- Use creative phrases and emojis naturally
+- Reference things like "building", "innovation", "community", "future"
+- Make it feel like insider knowledge or exclusive info
+- Use hashtags sparingly but effectively
+
+Examples of tone:
+- "Don't sleep on this! @anoma is building something that will change everything"
+- "The future of privacy is here and @anoma is leading the charge"
+- "Just discovered what @anoma is cooking up... mind blown 🤯"
+
+Generate a tweet that captures this energy and excitement."""
             response = self.gemini_model.generate_content(prompt)
             tweet_text = response.text.strip()
             # Ensure @anoma is present but not at the start
@@ -609,28 +618,99 @@ class XAutoReplyBot:
                 tweet_text = f"{tweet_text} @{self.config.TARGET_ACCOUNT}".strip()
             tweet_text = remove_non_bmp(tweet_text)
             self.logger.info(f"Generated hype tweet: {tweet_text}")
+            
             # Navigate to compose tweet page
+            self.logger.info("Navigating to compose tweet page...")
             self.driver.get("https://x.com/compose/tweet")
-            time.sleep(2) # Wait for page to load
+            time.sleep(3) # Wait longer for page to load
+            
             # Find and click the tweet text area
+            self.logger.info("Looking for tweet textarea...")
             tweet_textarea = self.wait.until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, '[data-testid="tweetTextarea_0"]'))
             )
+            self.logger.info("Found tweet textarea, clicking and typing...")
             human_move_and_click(self.driver, tweet_textarea)
-            # Human-like scroll and type
+            
+            # Clear any existing text and type
+            tweet_textarea.clear()
+            time.sleep(0.5)
             human_scroll(self.driver)
             human_type(tweet_textarea, tweet_text)
-            time.sleep(random.uniform(0.5, 1.5)) # Human-like pause after typing
-            # Find and click the tweet button
-            send_button = self.wait.until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, '[data-testid="tweetButton"]'))
-            )
-            human_move_and_click(self.driver, send_button)
-            # Wait for tweet to be posted
-            time.sleep(5) # Give it a moment to load
+            time.sleep(random.uniform(1.0, 2.0)) # Longer pause after typing
+            
+            # Find and click the tweet button with multiple selectors
+            self.logger.info("Looking for tweet button...")
+            send_button = None
+            button_selectors = [
+                '[data-testid="tweetButton"]',
+                '[data-testid="tweetButtonInline"]',
+                'div[role="button"][data-testid="tweetButton"]',
+                'div[role="button"]:has-text("Post")',
+                'div[role="button"]:has-text("Tweet")'
+            ]
+            
+            for selector in button_selectors:
+                try:
+                    send_button = self.wait.until(
+                        EC.element_to_be_clickable((By.CSS_SELECTOR, selector))
+                    )
+                    self.logger.info(f"Found tweet button with selector: {selector}")
+                    break
+                except TimeoutException:
+                    continue
+            
+            if not send_button:
+                # Try to find by text content
+                try:
+                    buttons = self.driver.find_elements(By.CSS_SELECTOR, 'div[role="button"]')
+                    for button in buttons:
+                        button_text = button.text.lower()
+                        if 'post' in button_text or 'tweet' in button_text:
+                            send_button = button
+                            self.logger.info(f"Found tweet button by text: {button_text}")
+                            break
+                except Exception as e:
+                    self.logger.error(f"Error finding button by text: {e}")
+            
+            if not send_button:
+                self.logger.error("Could not find tweet button with any selector")
+                return False
+            
+            # Click the button with multiple attempts
+            self.logger.info("Attempting to click tweet button...")
+            try:
+                # Scroll to button first
+                self.driver.execute_script("arguments[0].scrollIntoView(true);", send_button)
+                time.sleep(1)
+                
+                # Try JavaScript click first
+                self.driver.execute_script("arguments[0].click();", send_button)
+                self.logger.info("Clicked tweet button with JavaScript")
+            except Exception as js_error:
+                self.logger.warning(f"JavaScript click failed: {js_error}, trying regular click...")
+                try:
+                    human_move_and_click(self.driver, send_button)
+                    self.logger.info("Clicked tweet button with regular click")
+                except Exception as click_error:
+                    self.logger.error(f"Regular click also failed: {click_error}")
+                    return False
+            
+            # Wait for tweet to be posted and verify
+            self.logger.info("Waiting for tweet to be posted...")
+            time.sleep(8) # Longer wait to ensure posting completes
+            
+            # Check if we're back to home or if there's a success indicator
+            current_url = self.driver.current_url
+            if "compose" not in current_url or "home" in current_url:
+                self.logger.info("Successfully posted tweet - navigated away from compose page")
+            else:
+                self.logger.info("Tweet posting completed (still on compose page)")
+            
             # Mark as replied (using a placeholder ID, as it's not a direct reply to a tweet)
             tweet_id_placeholder = "hype_tweet_" + str(int(time.time() * 1000))
             self.replied_tweets.add(tweet_id_placeholder)
+            
             # Update stats for posts made
             today_stats = self._get_today_stats()
             today_stats['posts_made'] += 1
@@ -638,6 +718,7 @@ class XAutoReplyBot:
             self._save_daily_stats()
             self.logger.info(f"Successfully posted hype tweet: {tweet_text}")
             return True # Indicate success
+            
         except TimeoutException as e:
             self.logger.error(f"Timeout posting hype tweet: {e}")
             self.logger.error(f"Current URL: {self.driver.current_url}")
