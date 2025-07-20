@@ -804,7 +804,6 @@ def main():
         print("X_USERNAME=your_username")
         print("X_PASSWORD=your_password")
         return
-
     print(f"Loaded USERNAME: {config.USERNAME}")    
     bot = XAutoReplyBot(config)
     bot.start()

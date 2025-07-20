@@ -1,9 +1,14 @@
 # XAuto: Advanced X (Twitter) Automation Bot
 
+> **⚠️ Disclaimer:**
+> This tool is for responsible, moderate use only. Excessive or aggressive automation may result in your X (Twitter) account being restricted or banned. Always comply with X's terms of service and use the bot in a way that does not spam, harass, or violate platform rules. Monitor your account regularly and use at your own risk.
+
 ## Overview
 XAuto is a sophisticated X (Twitter) automation bot that provides intelligent support for the Anoma project. It combines automated replies to mentions with AI-powered content generation for maximum engagement and community building.
 
 ## 🚀 Key Features
+
+> **Customizable Target**: You can change the bot to support any X (Twitter) account or keyword, not just Anoma. Simply update the `TARGET_ACCOUNT` and `SEARCH_QUERY` settings in the configuration (see below) to use the bot for any project or topic you like.
 
 ### Core Automation
 - **Smart Reply System**: Automatically replies to @anoma mentions with engaging, human-like responses
@@ -52,6 +57,8 @@ X_EMAIL_OR_PHONE=your_email_or_phone_here
 GEMINI_API_KEY=your_gemini_api_key_here
 
 # Bot Configuration
+TARGET_ACCOUNT=anoma           # Change this to any account you want to support
+SEARCH_QUERY=@anoma -from:anoma # Change this to any search query you want
 MAX_CYCLES_PER_RUN=10  # Set to None for infinite
 ```
 
@@ -80,21 +87,21 @@ python main.py
 
 ### 1. Content Generation Cycle
 The bot runs in cycles, each consisting of:
-- **Hype Tweet Phase**: Posts 3 AI-generated creative tweets about Anoma
+- **Hype Tweet Phase**: Posts 3 AI-generated creative tweets about the target account or topic (default: Anoma)
 - **Reply Phase**: Processes up to 20 mentions in batches of 5
 - **Cooldown**: Natural delays between cycles for human-like behavior
 
 ### 2. AI Content Generation
 - Uses Google Gemini 1.5 Flash for creative tweet generation
-- Generates authentic, exciting content about Anoma
-- Ensures @anoma is mentioned but not at the start of tweets
+- Generates authentic, exciting content about the configured target account or topic
+- Ensures the target account (e.g., @anoma) is mentioned but not at the start of tweets
 - Creates content that feels like genuine community excitement
 
 ### 3. Smart Reply System
-- Searches for @anoma mentions (excluding official posts)
+- Searches for mentions of the configured target account (default: @anoma, but customizable)
 - Filters for original tweets (not replies)
 - Avoids duplicate replies using tweet ID tracking
-- Uses 30+ pre-written templates for variety
+- Uses 30+ pre-written templates for variety (customizable)
 
 ### 4. Anti-Detection Features
 - Undetected Chrome driver
